@@ -1,0 +1,140 @@
+.App {
+  width: 1366px;
+  height: 1461px;
+}
+.top {
+  display: flex; /* Arrange elements horizontally */
+  align-items: center; /* Vertically center content */
+  justify-content: space-between; /* Distribute elements evenly */
+  padding: 20px; /* Overall padding */
+  border-radius: 5px; /* Optional rounded corners */
+}
+.hotel img {
+  /* Existing styles remain */
+  transition: transform 0.3s ease-in-out; /* Add hover effect */
+}
+
+.hotel img:hover {
+  transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+/* Image container */
+.conp {
+  flex-basis: 30%; /* Adjust image width */
+}
+.star {
+  width: 10px;
+  height: 10px;
+}
+#no {
+  width: 20px;
+  height: 20px;
+}
+#ne {
+  width: 20px;
+  height: 20px;
+}
+#nr {
+  width: 20px;
+  height: 20px;
+}
+#na {
+  width: 20px;
+  height: 20px;
+}
+#ng {
+  width: 20px;
+  height: 20px;
+}
+#ni {
+  width: 20px;
+  height: 20px;
+}
+/* Image styling */
+.picture {
+  width: 100%;
+  height: auto;
+  border-radius: 5px; /* Optional rounded corners */
+}
+
+/* Form container */
+.cont {
+  flex-basis: 60%; /* Adjust form width */
+  display: flex; /* Arrange form elements vertically */
+  flex-direction: column;
+  gap: 15px; /* Space between form elements */
+}
+
+/* Form elements */
+.form {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between label and select */
+}
+
+.place {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Optional rounded corners */
+  font-size: 16px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  width: 100px;
+  border-radius: 5px; /* Optional rounded corners */
+  cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .top {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+  }
+
+  .conp {
+    text-align: center; /* Center the image */
+  }
+}
+.select {
+  display: flex;
+  width: 1002px;
+  align-items: flex-start;
+  gap: 8px;
+}
+.hotel {
+  display: flex; /* Arrange elements horizontally */
+  align-items: center; /* Vertically align elements */
+  margin-bottom: 20px; /* Space between hotels */
+  border: 1px solid lightgray; /* Add a border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 15px; /* Interior spacing */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Image styling */
+.hotel img {
+  width: 250px; /* Adjust image width */
+  height: 180px; /* Adjust image height */
+  object-fit: cover; /* Ensure image covers the area */
+  border-radius: 5px; /* Rounded corners */
+  margin-right: 15px; /* Space between image and info */
+}
+
+/* Info styling */
+.hotel .info {
+  flex-grow: 1; /* Take up remaining space */
+}
+
+.hotel h3 {
+  margin-bottom: 5px; /* Space between headers */
+  font-weight: 500; /* Slightly bolder font */
+}
+
+/* Price styling */
+.hotel .prices {
+  text-align: right; /* Align price to the right */
+  font-weight: bold; /* Make price stand out */
+}
